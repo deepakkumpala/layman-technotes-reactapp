@@ -1,0 +1,51 @@
+{
+  "courseId": "architectural_patterns",
+  "courseTitle": "Architectural Patterns",
+  "assessmentTitle": "Software Architecture Interview",
+  "description": "Test your understanding of architectural patterns through this interview-style assessment.",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Can you explain the Microservices architecture pattern and when you would use it?",
+      "hint": "Think about service independence, scalability, and organizational structure.",
+      "sampleAnswer": "Microservices is an architectural pattern where an application is structured as a collection of loosely coupled, independently deployable services. Each service is self-contained, owns its data, and communicates via APIs. Use microservices when you need independent scalability, have multiple teams working on different components, require technology diversity, or need to deploy services independently. It's ideal for large, complex applications but adds operational overhead.",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "question": "What is the Circuit Breaker pattern and why is it important in distributed systems?",
+      "hint": "Consider failure handling and system resilience.",
+      "sampleAnswer": "Circuit Breaker prevents an application from repeatedly trying to execute an operation that's likely to fail. It monitors for failures and 'opens' after a threshold, immediately returning an error instead of calling the failing service. After a timeout, it enters 'half-open' state to test if the issue is resolved. This prevents cascading failures, reduces resource consumption on failing services, and improves system resilience in distributed architectures.",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "question": "How does the Saga pattern work and when would you use it?",
+      "hint": "Think about distributed transactions and compensating actions.",
+      "sampleAnswer": "The Saga pattern manages data consistency across microservices in distributed transactions. Instead of traditional ACID transactions, it uses a sequence of local transactions, where each service performs its transaction and publishes an event. If one fails, compensating transactions are executed to undo previous changes. Use Sagas for long-running business processes spanning multiple services where two-phase commit isn't feasible. Common implementations include choreography (event-driven) and orchestration (centrally coordinated).",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "question": "What is CQRS and what problems does it solve?",
+      "hint": "Consider read vs write operations and scalability.",
+      "sampleAnswer": "CQRS (Command Query Responsibility Segregation) separates read and write operations into different models. Commands modify data, queries retrieve data. This allows independent scaling of reads and writes, optimized data models for each operation, and better performance. Use CQRS when read and write workloads differ significantly, you need different data representations for queries vs updates, or in event-sourced systems. It adds complexity, so only use when benefits justify the overhead.",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "question": "Explain Service Discovery and why it's critical in microservices.",
+      "hint": "Think about dynamic environments and service location.",
+      "sampleAnswer": "Service Discovery enables services to find and communicate with each other without hard-coded addresses. It maintains a registry of available service instances and their locations. Client-side discovery has clients query the registry; server-side discovery uses a load balancer. Essential in microservices because services can scale dynamically, instances may be added/removed frequently, and IP addresses change in containerized environments. Examples include Consul, Eureka, and Kubernetes DNS.",
+      "points": 10
+    },
+    {
+      "id": 6,
+      "question": "What is the Two-Phase Commit protocol and what are its limitations?",
+      "hint": "Consider distributed transactions and coordination.",
+      "sampleAnswer": "Two-Phase Commit (2PC) is a distributed transaction protocol ensuring all participants in a distributed transaction either commit or rollback together. Phase 1: coordinator asks participants to prepare and vote. Phase 2: if all vote yes, coordinator tells all to commit; if any votes no, all rollback. Limitations: coordinator is a single point of failure, can block resources if coordinator fails, poor performance due to synchronous nature, and doesn't work well in highly distributed systems. Modern architectures often prefer eventual consistency patterns.",
+      "points": 10
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "courseTitle": "Cyber Security",
+  "courseDescription": ".",
+  "modules": [
+    {
+      "moduleTitle": "Cyber Security Cards",
+      "moduleDescription": ".",
+      "lessons": [
+        {
+          "lessonId": "lesson-001",
+          "lessonTitle": "Near Field Communication,
+          "lessonContent": ".",
+          "duration": "15 min"
+        }
+      ]
+    }
+  ]
+}

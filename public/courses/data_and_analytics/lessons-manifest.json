@@ -1,0 +1,14 @@
+{
+  "flatStructure": true,
+  "lessons": [
+    {"lessonId": "bigdata", "lessonTitle": "Big Data", "duration": "10 min", "mdFiles": ["bigdata.md"]},
+    {"lessonId": "denormalization", "lessonTitle": "Denormalization", "duration": "10 min", "mdFiles": ["denormalization.md"]},
+    {"lessonId": "indexing", "lessonTitle": "Indexing", "duration": "10 min", "mdFiles": ["indexing.md"]},
+    {"lessonId": "materializedview", "lessonTitle": "Materialized View", "duration": "10 min", "mdFiles": ["materializedview.md"]},
+    {"lessonId": "metadata-driven-arch", "lessonTitle": "Metadata Driven Architecture", "duration": "10 min", "mdFiles": ["metadata-driven-arch.md"]},
+    {"lessonId": "nosql", "lessonTitle": "NoSQL", "duration": "10 min", "mdFiles": ["nosql.md"]},
+    {"lessonId": "partitining", "lessonTitle": "Partitioning", "duration": "10 min", "mdFiles": ["partitining.md"]},
+    {"lessonId": "replication", "lessonTitle": "Replication", "duration": "10 min", "mdFiles": ["replication.md"]},
+    {"lessonId": "sharding", "lessonTitle": "Sharding", "duration": "10 min", "mdFiles": ["sharding.md"]}
+  ]
+}

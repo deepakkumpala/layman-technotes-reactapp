@@ -1,0 +1,72 @@
+{
+  "courseId": "data_and_analytics",
+  "courseTitle": "Data and Analytics",
+  "assessmentTitle": "Data Engineering Interview",
+  "description": "Test your understanding of data and analytics concepts through this interview-style assessment.",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is Big Data and what are its key characteristics?",
+      "hint": "Think about the Vs of Big Data.",
+      "sampleAnswer": "Big Data refers to datasets that are too large, complex, or rapidly changing for traditional data processing tools. Key characteristics are the 5 Vs: Volume (massive amounts of data), Velocity (high speed of data generation and processing), Variety (structured, semi-structured, and unstructured data), Veracity (data quality and trustworthiness), and Value (ability to extract meaningful insights). Technologies like Hadoop, Spark, and cloud data platforms are designed to handle Big Data challenges.",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "question": "Can you explain database sharding and when you would use it?",
+      "hint": "Consider horizontal partitioning and scalability.",
+      "sampleAnswer": "Sharding is a database architecture pattern that horizontally partitions data across multiple databases or servers, with each shard containing a subset of the data. Each shard is independent and contains unique rows. Use sharding when a single database can't handle the load, you need to scale beyond vertical limits, or want to improve query performance by distributing load. Common sharding strategies include range-based, hash-based, or geography-based. Challenges include complex queries across shards and rebalancing.",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "question": "What is database partitioning and how does it differ from sharding?",
+      "hint": "Think about data distribution within vs across databases.",
+      "sampleAnswer": "Partitioning divides a large table into smaller pieces within the same database instance, improving query performance and maintenance. Common types are range, list, and hash partitioning. Sharding distributes data across multiple database servers. Partitioning is vertical/logical division within one system, while sharding is horizontal/physical division across systems. Partitioning improves performance and management; sharding adds scalability and fault tolerance but increases complexity.",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "question": "What is denormalization and when should you use it?",
+      "hint": "Consider the trade-off between normalization and performance.",
+      "sampleAnswer": "Denormalization is the process of adding redundant data to normalized tables to improve read performance by reducing joins. While normalization reduces data redundancy and improves data integrity, it can slow down queries requiring multiple joins. Use denormalization in read-heavy systems, data warehouses, reporting databases, or when query performance is critical. Trade-offs include increased storage, more complex updates, and potential data inconsistency. Common in OLAP systems and NoSQL databases.",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "question": "How does database replication work and what are the different types?",
+      "hint": "Think about data synchronization and high availability.",
+      "sampleAnswer": "Replication copies data from one database to others to ensure high availability and improve read performance. Master-Slave (primary-replica): writes go to master, replicas handle reads; provides read scalability but single write point. Master-Master (multi-master): multiple nodes accept writes; offers write scalability but risks conflicts. Synchronous replication ensures consistency but impacts performance; asynchronous replication is faster but risks data loss. Use replication for disaster recovery, geographic distribution, and load balancing.",
+      "points": 10
+    },
+    {
+      "id": 6,
+      "question": "What is a Materialized View and when would you use it?",
+      "hint": "Consider precomputed query results and performance.",
+      "sampleAnswer": "A Materialized View is a database object containing query results that are physically stored and periodically refreshed, unlike regular views which are virtual. It precomputes expensive operations like aggregations, joins, or complex calculations. Use materialized views for frequently accessed complex queries, reporting dashboards, or OLAP systems where data doesn't change frequently. Benefits include faster query performance; trade-offs include storage overhead, refresh latency, and potential data staleness. Essential for optimizing data warehouse queries.",
+      "points": 10
+    },
+    {
+      "id": 7,
+      "question": "What is NoSQL and when would you choose it over a relational database?",
+      "hint": "Think about schema flexibility and scalability requirements.",
+      "sampleAnswer": "NoSQL databases are non-relational databases designed for specific data models and access patterns. Types include document (MongoDB), key-value (Redis), wide-column (Cassandra), and graph (Neo4j). Choose NoSQL when you need: flexible schemas for rapidly evolving data, horizontal scalability for massive data volumes, high performance for specific access patterns, or specialized data models like graphs. Use relational databases when you need ACID transactions, complex queries, or well-defined schemas. Many modern applications use both (polyglot persistence).",
+      "points": 10
+    },
+    {
+      "id": 8,
+      "question": "What is a metadata-driven architecture in data engineering?",
+      "hint": "Consider configuration-driven data pipelines.",
+      "sampleAnswer": "Metadata-driven architecture uses metadata (data about data) to configure and control data pipelines dynamically, rather than hard-coding logic. Metadata includes source/target locations, transformation rules, data lineage, and scheduling information. Benefits include: easier maintenance, faster development, better reusability, improved data governance, and simplified changes without code modifications. Common in ETL frameworks where pipeline behavior is defined in configuration tables or files, enabling non-technical users to modify data flows.",
+      "points": 10
+    },
+    {
+      "id": 9,
+      "question": "Explain database indexing and the trade-offs involved.",
+      "hint": "Think about read vs write performance.",
+      "sampleAnswer": "Indexing creates data structures (typically B-trees or hash tables) that improve data retrieval speed by allowing quick lookups without scanning entire tables. Types include clustered (defines physical storage order), non-clustered (separate structure with pointers), and specialized indexes (full-text, spatial). Trade-offs: indexes speed up reads but slow down writes (inserts, updates, deletes) because indexes must be updated. They also consume storage space. Over-indexing can hurt performance. Index high-cardinality columns used in WHERE, JOIN, and ORDER BY clauses.",
+      "points": 10
+    }
+  ]
+}

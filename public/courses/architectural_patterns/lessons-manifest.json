@@ -1,0 +1,11 @@
+{
+  "flatStructure": true,
+  "lessons": [
+    {"lessonId": "2phasecommit", "lessonTitle": "Two Phase Commit", "duration": "10 min", "mdFiles": ["2phasecommit.md"]},
+    {"lessonId": "circuit-breaker", "lessonTitle": "Circuit Breaker", "duration": "10 min", "mdFiles": ["circuit-breaker.md"]},
+    {"lessonId": "cqrs", "lessonTitle": "CQRS", "duration": "10 min", "mdFiles": ["cqrs.md"]},
+    {"lessonId": "microservices", "lessonTitle": "Microservices", "duration": "10 min", "mdFiles": ["microservices.md"]},
+    {"lessonId": "saga", "lessonTitle": "Saga Pattern", "duration": "10 min", "mdFiles": ["saga.md"]},
+    {"lessonId": "service-discovery", "lessonTitle": "Service Discovery", "duration": "10 min", "mdFiles": ["service-discovery.md"]}
+  ]
+}

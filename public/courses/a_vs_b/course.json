@@ -1,0 +1,210 @@
+{
+  "courseTitle": "A vs B",
+  "courseDescription": "Comprehensive comparisons of technologies, concepts, and approaches in software development and architecture.",
+  "modules": [
+    {
+      "moduleTitle": "Technology Comparisons",
+      "moduleDescription": "Detailed comparisons of various technologies and concepts.",
+      "lessons": [
+        {
+          "lessonId": "lesson-001",
+          "lessonTitle": "AI Automation vs AI Agents",
+          "lessonContent": "Compare and contrast AI Automation and AI Agents",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-002",
+          "lessonTitle": "ASP.NET vs ASP.NET Core",
+          "lessonContent": "Compare and contrast ASP.NET and ASP.NET Core",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-003",
+          "lessonTitle": "Automation vs AI Automation",
+          "lessonContent": "Compare and contrast Automation and AI Automation",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-004",
+          "lessonTitle": "Azure Service Bus vs Event Hub",
+          "lessonContent": "Compare and contrast Azure Service Bus and Event Hub",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-005",
+          "lessonTitle": "Azure SQL vs Managed Instance",
+          "lessonContent": "Compare and contrast Azure SQL and Managed Instance",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-006",
+          "lessonTitle": "Batch vs Stream",
+          "lessonContent": "Compare and contrast Batch and Stream processing",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-007",
+          "lessonTitle": "Business Continuity vs Disaster Recovery",
+          "lessonContent": "Compare and contrast Business Continuity and Disaster Recovery",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-008",
+          "lessonTitle": "Copilot Studio vs Azure AI Studio",
+          "lessonContent": "Compare and contrast Copilot Studio and Azure AI Studio",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-009",
+          "lessonTitle": "Data Warehouse vs Data Lake",
+          "lessonContent": "Compare and contrast Data Warehouse and Data Lake",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-010",
+          "lessonTitle": "Federated vs Passthrough Auth",
+          "lessonContent": "Compare and contrast Federated and Passthrough Authentication",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-011",
+          "lessonTitle": "gRPC vs RESTful",
+          "lessonContent": "Compare and contrast gRPC and RESTful APIs",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-012",
+          "lessonTitle": "High Availability vs Fault Tolerant",
+          "lessonContent": "Compare and contrast High Availability and Fault Tolerance",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-013",
+          "lessonTitle": "HIPAA vs GDPR",
+          "lessonContent": "Compare and contrast HIPAA and GDPR compliance",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-014",
+          "lessonTitle": "Horizontal vs Vertical Scaling",
+          "lessonContent": "Compare and contrast Horizontal and Vertical scaling",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-015",
+          "lessonTitle": "Hub vs Spoke Architecture",
+          "lessonContent": "Compare and contrast Hub and Spoke architecture",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-016",
+          "lessonTitle": "IDS vs IPS",
+          "lessonContent": "Compare and contrast Intrusion Detection and Prevention Systems",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-017",
+          "lessonTitle": "Kusto vs SQL",
+          "lessonContent": "Compare and contrast Kusto and SQL",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-018",
+          "lessonTitle": "Load Testing vs Stress Testing",
+          "lessonContent": "Compare and contrast Load and Stress testing",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-019",
+          "lessonTitle": "Login vs User in SQL Server",
+          "lessonContent": "Compare and contrast Login and User in SQL Server",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-020",
+          "lessonTitle": "Offensive vs Defensive Security",
+          "lessonContent": "Compare and contrast Offensive and Defensive Security",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-021",
+          "lessonTitle": "OLTP vs OLAP",
+          "lessonContent": "Compare and contrast OLTP and OLAP",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-022",
+          "lessonTitle": "POST vs PUT",
+          "lessonContent": "Compare and contrast POST and PUT HTTP methods",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-023",
+          "lessonTitle": "Predictive vs Reactive",
+          "lessonContent": "Compare and contrast Predictive and Reactive approaches",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-024",
+          "lessonTitle": "Private vs Approved Outbound",
+          "lessonContent": "Compare and contrast Private and Approved Outbound endpoints",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-025",
+          "lessonTitle": "Ref vs Out in C#",
+          "lessonContent": "Compare and contrast Ref and Out parameters in C#",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-026",
+          "lessonTitle": "RESTful vs GraphQL",
+          "lessonContent": "Compare and contrast RESTful and GraphQL APIs",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-027",
+          "lessonTitle": "RTO vs RPO",
+          "lessonContent": "Compare and contrast Recovery Time Objective and Recovery Point Objective",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-028",
+          "lessonTitle": "Schema on Write vs Read",
+          "lessonContent": "Compare and contrast Schema on Write and Schema on Read",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-029",
+          "lessonTitle": "Solution vs Enterprise Architect",
+          "lessonContent": "Compare and contrast Solution and Enterprise Architects",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-030",
+          "lessonTitle": "Squid vs Nginx",
+          "lessonContent": "Compare and contrast Squid and Nginx",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-031",
+          "lessonTitle": "Strategic vs Tactical in DDD",
+          "lessonContent": "Compare and contrast Strategic and Tactical design in Domain-Driven Design",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-032",
+          "lessonTitle": "UAT vs CIT",
+          "lessonContent": "Compare and contrast User Acceptance Testing and Component Integration Testing",
+          "duration": "10 min"
+        },
+        {
+          "lessonId": "lesson-033",
+          "lessonTitle": "Views vs Stored Procedures",
+          "lessonContent": "Compare and contrast Views and Stored Procedures",
+          "duration": "10 min"
+        }
+      ]
+    }
+  ]
+}

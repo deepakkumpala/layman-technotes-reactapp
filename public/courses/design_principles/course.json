@@ -1,0 +1,42 @@
+{
+  "courseTitle": "Architects Refresher Guide",
+  "courseDescription": "A comprehensive refresher for practicing architects covering design principles, regulations, materials, and technology.",
+  "modules": [
+    {
+      "moduleTitle": "Introduction to Architecture",
+      "moduleDescription": "Overview of architectural fundamentals and the role of architects.",
+      "lessons": [
+        {
+          "lessonId": "lesson-001",
+          "lessonTitle": "History of Architecture",
+          "lessonContent": "Explore key movements and milestones from ancient to modern architecture.",
+          "duration": "15 min"
+        },
+        {
+          "lessonId": "lesson-002",
+          "lessonTitle": "Role of an Architect",
+          "lessonContent": "Understand the responsibilities, challenges, and impact of architects in society.",
+          "duration": "10 min"
+        }
+      ]
+    },
+    {
+      "moduleTitle": "Design Principles",
+      "moduleDescription": "Core principles that guide architectural design.",
+      "lessons": [
+        {
+          "lessonId": "lesson-001",
+          "lessonTitle": "Form and Function",
+          "lessonContent": "Learn how aesthetics and utility shape architectural decisions.",
+          "duration": "20 min"
+        },
+        {
+          "lessonId": "lesson-002",
+          "lessonTitle": "Balance and Proportion",
+          "lessonContent": "Understand spatial harmony and visual equilibrium.",
+          "duration": "15 min"
+        }
+      ]
+    }
+  ]
+}

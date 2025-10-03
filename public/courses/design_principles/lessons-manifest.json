@@ -1,0 +1,7 @@
+{
+  "flatStructure": true,
+  "lessons": [
+    {"lessonId": "interoperability", "lessonTitle": "Interoperability", "duration": "10 min", "mdFiles": ["interoperability.md"]},
+    {"lessonId": "ooad", "lessonTitle": "Object Oriented Analysis and Design", "duration": "10 min", "mdFiles": ["ooad.md"]}
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "courseId": "networking_security",
+  "courseTitle": "Networking & Security",
+  "assessmentTitle": "Network & Security Interview",
+  "description": "Test your understanding of networking and security concepts through this interview-style assessment.",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is DNS and how does it work?",
+      "hint": "Think about domain name resolution and the hierarchy.",
+      "sampleAnswer": "DNS (Domain Name System) translates human-readable domain names into IP addresses. When you enter a URL, your browser queries a DNS resolver, which checks its cache. If not found, it queries root servers, then TLD servers (.com, .org), then authoritative nameservers for the specific domain. The response is cached to speed up future requests. DNS uses UDP port 53 for queries. Types of DNS records include A (IPv4 address), AAAA (IPv6), CNAME (alias), MX (mail server), and TXT (text information). DNS is critical infrastructure but can be a security vulnerability (DNS spoofing, DDoS attacks).",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "question": "Can you explain the difference between a Forward Proxy and a Reverse Proxy?",
+      "hint": "Consider client-side vs server-side proxying.",
+      "sampleAnswer": "A Forward Proxy sits between clients and the internet, acting on behalf of clients. It masks client IPs, provides content filtering, caching, and access control. Used by organizations to control employee internet access. A Reverse Proxy sits in front of backend servers, acting on behalf of servers. It handles load balancing, SSL termination, caching, and security. Clients don't know about backend servers. Forward proxy: client-aware, server-unaware. Reverse proxy: server-aware, client-unaware. Examples: Forward - Squid; Reverse - Nginx, HAProxy.",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "question": "What is a Load Balancer and what algorithms does it use?",
+      "hint": "Think about traffic distribution and high availability.",
+      "sampleAnswer": "A Load Balancer distributes incoming network traffic across multiple servers to ensure high availability, scalability, and reliability. Common algorithms include: Round Robin (requests distributed sequentially), Least Connections (to server with fewest active connections), IP Hash (based on client IP), Weighted Round Robin (servers weighted by capacity), and Least Response Time (to fastest server). Load balancers operate at Layer 4 (transport - TCP/UDP) or Layer 7 (application - HTTP). They perform health checks, SSL termination, and session persistence. Essential for handling high traffic and preventing single points of failure.",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "question": "What's the difference between symmetric and asymmetric encryption?",
+      "hint": "Consider key usage and performance.",
+      "sampleAnswer": "Symmetric encryption uses the same key for encryption and decryption. It's fast and efficient for large data but requires secure key exchange. Examples: AES, DES. Asymmetric encryption uses a public-private key pair: public key encrypts, private key decrypts. It's slower but solves the key distribution problem. Examples: RSA, ECC. In practice, systems use both: asymmetric encryption to securely exchange symmetric keys (like in TLS/SSL), then symmetric encryption for data transfer. Asymmetric is also used for digital signatures.",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "question": "What is a VPN and how does it work?",
+      "hint": "Think about secure tunneling and encryption.",
+      "sampleAnswer": "A VPN (Virtual Private Network) creates an encrypted tunnel between a client and a VPN server, securing data transmission over public networks. It masks your IP address and encrypts traffic, preventing eavesdropping. Types include: Remote Access VPN (for individual users), Site-to-Site VPN (connecting networks), and SSL VPN (browser-based). Protocols include IPSec, OpenVPN, WireGuard. VPNs provide privacy, bypass geo-restrictions, and enable secure remote work. Used by organizations for secure remote access and by individuals for privacy.",
+      "points": 10
+    },
+    {
+      "id": 6,
+      "question": "Explain the OSI model and its seven layers.",
+      "hint": "Think about the stack from physical to application.",
+      "sampleAnswer": "The OSI (Open Systems Interconnection) model is a conceptual framework for understanding network communication. Seven layers: 1) Physical (cables, voltages), 2) Data Link (MAC addresses, switches), 3) Network (IP addressing, routing), 4) Transport (TCP/UDP, ports), 5) Session (connection management), 6) Presentation (encryption, encoding), 7) Application (HTTP, FTP, SMTP). Each layer provides services to the layer above and uses services from the layer below. Helps troubleshoot network issues and understand protocol interactions. TCP/IP model is a simpler, practical alternative with 4 layers.",
+      "points": 10
+    },
+    {
+      "id": 7,
+      "question": "What is a Firewall and what are the different types?",
+      "hint": "Consider packet filtering and application awareness.",
+      "sampleAnswer": "A Firewall monitors and controls network traffic based on security rules. Types include: Packet Filtering (inspects packets based on IP, port, protocol), Stateful Inspection (tracks connection state), Application/Proxy (filters at application layer, deep inspection), Next-Generation Firewall (includes IPS, malware detection, deep packet inspection). Deployment models: Network Firewall (perimeter protection), Host-based Firewall (on individual devices), Cloud Firewall (protecting cloud resources). Firewalls use allow/deny rules based on source/destination IPs, ports, and protocols. Essential first line of defense.",
+      "points": 10
+    },
+    {
+      "id": 8,
+      "question": "What is Zero Trust Security and how does it differ from traditional security?",
+      "hint": "Think about 'never trust, always verify'.",
+      "sampleAnswer": "Zero Trust Security assumes no user or device should be trusted by default, even inside the network perimeter. Unlike traditional castle-and-moat security (trusted inside, untrusted outside), Zero Trust verifies every access request regardless of origin. Key principles: verify explicitly (authenticate and authorize), least privilege access (minimal permissions), and assume breach (monitor and respond). Implements micro-segmentation, multi-factor authentication, and continuous monitoring. Essential for cloud, remote work, and modern threat landscape where perimeters are dissolving.",
+      "points": 10
+    }
+  ]
+}

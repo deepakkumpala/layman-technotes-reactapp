@@ -1,0 +1,24 @@
+{
+  "courseTitle": "AIML",
+  "courseDescription": "A comprehensive refresher for practicing architects covering design principles, regulations, materials, and technology.",
+  "modules": [
+    {
+      "moduleTitle": "AI Cards",
+      "moduleDescription": "Overview of architectural fundamentals and the role of architects.",
+      "lessons": [
+        {
+          "lessonId": "lesson-001",
+          "lessonTitle": "Azure AI Studio",
+          "lessonContent": "Explore key movements and milestones from ancient to modern architecture.",
+          "duration": "15 min"
+        },
+        {
+          "lessonId": "lesson-002",
+          "lessonTitle": "System vs User Prompt & Test Time Compute",
+          "lessonContent": "Understand prompt types and test time computation in AI systems.",
+          "duration": "10 min"
+        }
+      ]
+    }
+  ]
+}

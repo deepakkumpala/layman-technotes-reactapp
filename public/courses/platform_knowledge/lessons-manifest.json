@@ -1,0 +1,22 @@
+{
+  "flatStructure": true,
+  "lessons": [
+    {"lessonId": "abtesting", "lessonTitle": "A/B Testing", "duration": "10 min", "mdFiles": ["ABTesting.md"]},
+    {"lessonId": "api_gateway", "lessonTitle": "API Gateway", "duration": "10 min", "mdFiles": ["api_gateway.md"]},
+    {"lessonId": "big_bang_deployment", "lessonTitle": "Big Bang Deployment", "duration": "10 min", "mdFiles": ["big_bang_deployment.md"]},
+    {"lessonId": "blue_green_deployment", "lessonTitle": "Blue Green Deployment", "duration": "10 min", "mdFiles": ["blue_green_deployment.md"]},
+    {"lessonId": "caching", "lessonTitle": "Caching", "duration": "10 min", "mdFiles": ["caching.md"]},
+    {"lessonId": "canary-deployment", "lessonTitle": "Canary Deployment", "duration": "10 min", "mdFiles": ["canary-deployment.md"]},
+    {"lessonId": "cdn", "lessonTitle": "Content Delivery Network", "duration": "10 min", "mdFiles": ["cdn.md"]},
+    {"lessonId": "contract-testing", "lessonTitle": "Contract Testing", "duration": "10 min", "mdFiles": ["contract-testing.md"]},
+    {"lessonId": "dotnetfamily", "lessonTitle": ".NET Family", "duration": "10 min", "mdFiles": ["dotNETFamily.md"]},
+    {"lessonId": "enterprise_service_bus", "lessonTitle": "Enterprise Service Bus", "duration": "10 min", "mdFiles": ["Enterprise_Service_Bus.md"]},
+    {"lessonId": "grpc", "lessonTitle": "gRPC", "duration": "10 min", "mdFiles": ["gRPC.md"]},
+    {"lessonId": "opentelemetry", "lessonTitle": "OpenTelemetry", "duration": "10 min", "mdFiles": ["opentelemetry.md"]},
+    {"lessonId": "rolling_deployment", "lessonTitle": "Rolling Deployment", "duration": "10 min", "mdFiles": ["rolling_deployment.md"]},
+    {"lessonId": "service-mesh", "lessonTitle": "Service Mesh", "duration": "10 min", "mdFiles": ["service-mesh.md"]},
+    {"lessonId": "singlesignon", "lessonTitle": "Single Sign-On", "duration": "10 min", "mdFiles": ["singlesignon.md"]},
+    {"lessonId": "webhook", "lessonTitle": "Webhook", "duration": "10 min", "mdFiles": ["webhook.md"]},
+    {"lessonId": "websocket", "lessonTitle": "WebSocket", "duration": "10 min", "mdFiles": ["websocket.md"]}
+  ]
+}

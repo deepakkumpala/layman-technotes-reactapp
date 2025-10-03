@@ -1,0 +1,79 @@
+{
+  "courseId": "a_vs_b",
+  "courseTitle": "A vs B Comparisons",
+  "assessmentTitle": "Technical Concepts Interview",
+  "description": "Test your understanding of key technical comparisons through this interview-style assessment.",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Can you explain the key differences between OLTP and OLAP systems?",
+      "hint": "Think about their primary purposes, data structures, and typical use cases.",
+      "sampleAnswer": "OLTP (Online Transaction Processing) systems are designed for handling day-to-day transactional operations with fast, simple queries and frequent updates. They use normalized data structures for data integrity. OLAP (Online Analytical Processing) systems are designed for complex analytical queries and reporting, using denormalized or dimensional data structures for better query performance. OLTP focuses on real-time operations while OLAP focuses on historical analysis.",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "question": "What are the main differences between batch processing and stream processing?",
+      "hint": "Consider timing, data volume, and use cases for each approach.",
+      "sampleAnswer": "Batch processing handles large volumes of data at scheduled intervals, with higher latency but better resource efficiency. It's suitable for non-time-critical operations like daily reports. Stream processing handles data continuously in real-time or near-real-time, with low latency but requires more resources. It's ideal for time-sensitive applications like fraud detection or real-time analytics.",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "question": "How would you explain the difference between a Data Warehouse and a Data Lake?",
+      "hint": "Think about data structure, schema, and typical users.",
+      "sampleAnswer": "A Data Warehouse stores structured, processed data with a predefined schema (schema-on-write), optimized for business intelligence and reporting. It's primarily used by business analysts. A Data Lake stores raw, unstructured or semi-structured data without a predefined schema (schema-on-read), allowing flexibility for various data types. It's used by data scientists and engineers for advanced analytics and machine learning.",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "question": "What's the difference between POST and PUT HTTP methods?",
+      "hint": "Consider idempotency and typical use cases.",
+      "sampleAnswer": "POST is used to create new resources and is not idempotent - multiple identical requests will create multiple resources. PUT is used to update or replace existing resources and is idempotent - multiple identical requests will have the same effect as a single request. POST targets a collection URI, while PUT typically targets a specific resource URI.",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "question": "Can you explain the difference between horizontal and vertical scaling?",
+      "hint": "Think about how resources are added and the limitations of each approach.",
+      "sampleAnswer": "Vertical scaling (scaling up) involves adding more resources to a single server, such as CPU, RAM, or storage. It has hardware limitations and creates a single point of failure. Horizontal scaling (scaling out) involves adding more servers to distribute the load. It offers better fault tolerance and theoretically unlimited scalability but requires load balancing and distributed system design.",
+      "points": 10
+    },
+    {
+      "id": 6,
+      "question": "What are the key differences between High Availability and Fault Tolerance?",
+      "hint": "Consider downtime, cost, and recovery approach.",
+      "sampleAnswer": "High Availability aims to minimize downtime through redundancy and quick failover, but may have brief interruptions during recovery. It's more cost-effective and accepts some downtime. Fault Tolerance provides continuous operation with zero downtime by running redundant systems simultaneously. It's more expensive but ensures no service interruption even during failures.",
+      "points": 10
+    },
+    {
+      "id": 7,
+      "question": "How do RESTful APIs differ from GraphQL?",
+      "hint": "Think about data fetching, endpoints, and flexibility.",
+      "sampleAnswer": "RESTful APIs use multiple endpoints for different resources with fixed data structures, which can lead to over-fetching or under-fetching. GraphQL uses a single endpoint where clients specify exactly what data they need, reducing over-fetching and the number of requests. REST is simpler and more standardized, while GraphQL offers more flexibility but adds complexity.",
+      "points": 10
+    },
+    {
+      "id": 8,
+      "question": "What's the difference between RTO and RPO in disaster recovery?",
+      "hint": "Consider what each metric measures and their business impact.",
+      "sampleAnswer": "RTO (Recovery Time Objective) is the maximum acceptable time to restore service after a disruption - how long the business can tolerate being down. RPO (Recovery Point Objective) is the maximum acceptable amount of data loss measured in time - how much data the business can afford to lose. For example, an RTO of 4 hours means systems must be back in 4 hours, while an RPO of 1 hour means we can lose up to 1 hour of data.",
+      "points": 10
+    },
+    {
+      "id": 9,
+      "question": "Can you explain the difference between IDS and IPS?",
+      "hint": "Think about detection vs prevention and their placement in the network.",
+      "sampleAnswer": "IDS (Intrusion Detection System) monitors network traffic and alerts administrators about suspicious activity but doesn't block traffic. It operates in monitoring mode and is typically placed outside the direct traffic path. IPS (Intrusion Prevention System) actively blocks detected threats in real-time by sitting inline with traffic flow. IDS is safer from false positives affecting legitimate traffic, while IPS provides active protection.",
+      "points": 10
+    },
+    {
+      "id": 10,
+      "question": "What are the differences between Business Continuity and Disaster Recovery?",
+      "hint": "Consider scope, focus, and what each plan addresses.",
+      "sampleAnswer": "Business Continuity is a comprehensive strategy for maintaining all business operations during and after a disruption, including people, processes, and technology. It's proactive and ongoing. Disaster Recovery is a subset focused specifically on restoring IT systems and data after a disaster. BC is broader and strategic, while DR is more tactical and IT-focused.",
+      "points": 10
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "flatStructure": true,
+  "lessons": [
+    {"lessonId": "dns", "lessonTitle": "DNS", "duration": "10 min", "mdFiles": ["dns.md"]},
+    {"lessonId": "forward_proxy", "lessonTitle": "Forward Proxy", "duration": "10 min", "mdFiles": ["forward_proxy.md"]},
+    {"lessonId": "loadbalancer", "lessonTitle": "Load Balancer", "duration": "10 min", "mdFiles": ["loadbalancer.md"]},
+    {"lessonId": "reverse_proxy", "lessonTitle": "Reverse Proxy", "duration": "10 min", "mdFiles": ["reverse_proxy.md"]}
+  ]
+}

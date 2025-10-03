@@ -1,0 +1,44 @@
+{
+  "courseId": "artificial_intelligence",
+  "courseTitle": "Artificial Intelligence",
+  "assessmentTitle": "AI Concepts Interview",
+  "description": "Test your understanding of artificial intelligence concepts through this interview-style assessment.",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is a Large Language Model (LLM) and how does it work?",
+      "hint": "Think about training, architecture, and how it generates text.",
+      "sampleAnswer": "A Large Language Model is a neural network trained on massive amounts of text data to understand and generate human-like text. It uses transformer architecture with attention mechanisms to understand context and relationships between words. LLMs predict the next token based on previous context, and they're trained through unsupervised learning on diverse text corpora. Examples include GPT, Claude, and LLaMA.",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "question": "Can you explain what embedding models and vectors are in AI?",
+      "hint": "Consider how text is converted to numbers and why this is useful.",
+      "sampleAnswer": "Embedding models convert text, images, or other data into numerical vectors (arrays of numbers) that capture semantic meaning. Similar concepts have vectors that are close together in the vector space. These embeddings enable mathematical operations on language and power applications like semantic search, recommendation systems, and similarity detection. Common models include Word2Vec, BERT embeddings, and OpenAI's text-embedding models.",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "question": "What's the difference between system prompts and user prompts?",
+      "hint": "Think about who provides them and their purpose.",
+      "sampleAnswer": "System prompts are instructions set by developers to define the AI's behavior, role, and constraints. They set the context and guidelines for how the model should respond. User prompts are the actual questions or inputs from end users. System prompts shape the assistant's personality and capabilities, while user prompts are the specific tasks or queries the user wants addressed.",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "question": "What is test-time compute and why is it important?",
+      "hint": "Consider the difference between training and inference.",
+      "sampleAnswer": "Test-time compute refers to computational resources used during inference (when the model generates responses) rather than training. Techniques like chain-of-thought reasoning, multiple sampling, and iterative refinement use more compute at inference time to improve output quality. It allows models to 'think harder' on complex problems, trading response time for better accuracy without retraining.",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "question": "How do multimodal AI systems work?",
+      "hint": "Think about different types of data and how they're processed together.",
+      "sampleAnswer": "Multimodal AI systems can process and understand multiple types of data simultaneously - such as text, images, audio, and video. They use specialized encoders for each modality that convert different data types into a shared embedding space where they can be related. This enables tasks like image captioning, visual question answering, and text-to-image generation. Examples include GPT-4V and DALL-E.",
+      "points": 10
+    }
+  ]
+}

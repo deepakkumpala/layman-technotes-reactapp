@@ -1,0 +1,11 @@
+{
+  "flatStructure": true,
+  "lessons": [
+    {"lessonId": "lesson-001", "lessonTitle": "Near Field Communication", "duration": "10 min", "mdFiles": ["nfc.md"]},
+    {"lessonId": "lesson-002", "lessonTitle": "OSINT - Open Source Intelligence", "duration": "12 min", "mdFiles": ["osint.md"]},
+    {"lessonId": "lesson-003", "lessonTitle": "OWASP - Web Application Security", "duration": "15 min", "mdFiles": ["owasp.md"]},
+    {"lessonId": "lesson-004", "lessonTitle": "Phishing Attacks", "duration": "15 min", "mdFiles": ["phishing.md"]},
+    {"lessonId": "lesson-005", "lessonTitle": "Spam vs Spim", "duration": "12 min", "mdFiles": ["spam-vs-spim.md"]},
+    {"lessonId": "lesson-006", "lessonTitle": "Replay Attack", "duration": "13 min", "mdFiles": ["replay-attack.md"]}
+  ]
+}

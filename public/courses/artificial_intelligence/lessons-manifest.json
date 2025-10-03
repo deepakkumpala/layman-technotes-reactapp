@@ -1,0 +1,12 @@
+{
+  "flatStructure": true,
+  "lessons": [
+    {"lessonId": "azure_ai_studio", "lessonTitle": "Azure AI Studio", "duration": "10 min", "mdFiles": ["azure_ai_studio.md"]},
+    {"lessonId": "embeddingmodels_and_vectors", "lessonTitle": "Embedding Models and Vectors", "duration": "10 min", "mdFiles": ["embeddingmodels_and_vectors.md"]},
+    {"lessonId": "filipped_interaction", "lessonTitle": "Filipped Interaction", "duration": "10 min", "mdFiles": ["filipped_interaction.md"]},
+    {"lessonId": "llm", "lessonTitle": "Large Language Models", "duration": "10 min", "mdFiles": ["llm.md"]},
+    {"lessonId": "multimodel_interaction", "lessonTitle": "Multimodel Interaction", "duration": "10 min", "mdFiles": ["multimodel_interaction.md"]},
+    {"lessonId": "system-vs-userprompt", "lessonTitle": "System vs User Prompt", "duration": "10 min", "mdFiles": ["system-vs-userprompt.md"]},
+    {"lessonId": "test_time_compute", "lessonTitle": "Test Time Compute", "duration": "10 min", "mdFiles": ["test_time_compute.md"]}
+  ]
+}

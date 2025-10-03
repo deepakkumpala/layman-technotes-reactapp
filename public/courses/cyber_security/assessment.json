@@ -1,0 +1,114 @@
+{
+  "courseId": "cyber_security",
+  "courseTitle": "Cyber Security",
+  "assessmentTitle": "Cybersecurity Concepts Interview",
+  "description": "Test your understanding of cybersecurity concepts through this interview-style assessment.",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the difference between symmetric and asymmetric encryption?",
+      "hint": "Think about keys used for encryption and decryption.",
+      "sampleAnswer": "Symmetric encryption uses the same key for both encryption and decryption, making it faster but requiring secure key exchange. Examples include AES and DES. Asymmetric encryption uses a public-private key pair - data encrypted with the public key can only be decrypted with the private key. It's slower but solves the key distribution problem. Examples include RSA and ECC. Asymmetric encryption is often used to securely exchange symmetric keys.",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "question": "Can you explain what a firewall is and the different types?",
+      "hint": "Consider how they filter traffic and at what network layers they operate.",
+      "sampleAnswer": "A firewall is a security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules. Types include: Packet-filtering firewalls (inspect packets at network layer), Stateful inspection firewalls (track connection states), Application-layer firewalls (inspect application data), Next-generation firewalls (combine multiple features with deep packet inspection), and Web Application Firewalls or WAF (protect web applications from attacks like SQL injection and XSS).",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "question": "What's the difference between IDS and IPS?",
+      "hint": "Think about detection versus prevention and how they respond to threats.",
+      "sampleAnswer": "IDS (Intrusion Detection System) monitors network traffic and alerts administrators about suspicious activity but doesn't block it - it's passive. IPS (Intrusion Prevention System) actively blocks or prevents detected threats in real-time - it's inline and can take action. IDS is like a surveillance camera, while IPS is like a security guard who can intervene. IPS has more risk of false positives disrupting legitimate traffic.",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "question": "What is the CIA triad in cybersecurity?",
+      "hint": "Consider the three fundamental principles of information security.",
+      "sampleAnswer": "The CIA triad represents the three core principles of information security: Confidentiality (ensuring data is only accessible to authorized users through encryption and access controls), Integrity (ensuring data accuracy and preventing unauthorized modification through hashing and checksums), and Availability (ensuring systems and data are accessible when needed through redundancy, backups, and DDoS protection). These principles guide security policies and controls.",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "question": "How does a DDoS attack work and how can you mitigate it?",
+      "hint": "Think about overwhelming resources and defense strategies.",
+      "sampleAnswer": "A DDoS (Distributed Denial of Service) attack overwhelms a target system with massive traffic from multiple sources, making services unavailable to legitimate users. Attackers use botnets (networks of compromised devices) to generate this traffic. Mitigation strategies include: rate limiting, traffic filtering, CDN and cloud-based DDoS protection services, load balancing, network redundancy, blackhole routing for severe attacks, and implementing CAPTCHA challenges to distinguish humans from bots.",
+      "points": 10
+    },
+    {
+      "id": 6,
+      "question": "What is SQL injection and how can it be prevented?",
+      "hint": "Consider database query manipulation and input validation.",
+      "sampleAnswer": "SQL injection is a vulnerability where attackers insert malicious SQL code into application inputs to manipulate database queries. This can lead to unauthorized data access, modification, or deletion. Prevention methods include: using parameterized queries or prepared statements (most important), input validation and sanitization, principle of least privilege for database accounts, web application firewalls, regular security testing, and avoiding dynamic SQL query construction with user input.",
+      "points": 10
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between authentication and authorization?",
+      "hint": "Think about identity verification versus permission granting.",
+      "sampleAnswer": "Authentication is the process of verifying who you are - confirming identity through credentials like passwords, biometrics, or tokens. Authorization determines what you're allowed to do - defining permissions and access rights after authentication. For example, logging in with username/password is authentication, while checking if you can view certain files is authorization. Authentication always comes before authorization.",
+      "points": 10
+    },
+    {
+      "id": 8,
+      "question": "What is multi-factor authentication (MFA) and why is it important?",
+      "hint": "Consider different authentication factors and security benefits.",
+      "sampleAnswer": "MFA requires users to provide two or more verification factors to gain access. The factors are: something you know (password), something you have (phone, token, smart card), and something you are (biometrics like fingerprint or face). MFA significantly improves security because even if one factor is compromised (like password stolen), attackers still can't access the account without the other factors. It's crucial for protecting sensitive systems and data.",
+      "points": 10
+    },
+    {
+      "id": 9,
+      "question": "What is a zero-day vulnerability and why is it dangerous?",
+      "hint": "Think about timing of discovery and available defenses.",
+      "sampleAnswer": "A zero-day vulnerability is a security flaw that is unknown to the software vendor or has no patch available. It's called zero-day because developers have had zero days to fix it. These are extremely dangerous because: there's no patch or fix available, attackers can exploit it before detection, traditional security tools may not detect the exploit, and organizations have no defense until a patch is released. They're often used in targeted attacks and can cause significant damage.",
+      "points": 10
+    },
+    {
+      "id": 10,
+      "question": "What is the principle of least privilege and why is it important?",
+      "hint": "Consider access rights and security risk reduction.",
+      "sampleAnswer": "The principle of least privilege means granting users, processes, or systems only the minimum access rights necessary to perform their functions. Users should have just enough permissions to do their job, nothing more. This is important because: it limits damage from security breaches, reduces attack surface, prevents accidental or malicious misuse, contains malware spread, and ensures better audit trails. It's a fundamental security best practice for access control.",
+      "points": 10
+    },
+    {
+      "id": 11,
+      "question": "What is OSINT and how is it used in cybersecurity?",
+      "hint": "Think about publicly available information and intelligence gathering.",
+      "sampleAnswer": "OSINT (Open Source Intelligence) is collecting and analyzing publicly available information from sources like social media, websites, public records, and search engines. In simple terms, it's like being a detective using only information anyone can access. In cybersecurity, defenders use OSINT to find what information about their organization is public and identify potential threats. Attackers use it during reconnaissance to gather information about targets before launching attacks. It's legal but powerful - combining scattered public info reveals valuable insights.",
+      "points": 10
+    },
+    {
+      "id": 12,
+      "question": "What is OWASP and why is it important for web security?",
+      "hint": "Consider the most common web application vulnerabilities.",
+      "sampleAnswer": "OWASP (Open Web Application Security Project) is a nonprofit organization that provides free resources to improve software security. Their most famous resource is the OWASP Top 10 - a list of the most critical web security risks like SQL injection, broken access control, and cryptographic failures. Think of it as a security guidebook that says 'Here are the top ways web apps get hacked and how to prevent them.' It's crucial because it gives developers and security teams a standard checklist to follow when building and testing web applications.",
+      "points": 10
+    },
+    {
+      "id": 13,
+      "question": "What is phishing and how can you identify it?",
+      "hint": "Think about fake messages trying to steal information.",
+      "sampleAnswer": "Phishing is when attackers pretend to be someone trustworthy (like your bank or a coworker) to trick you into giving away passwords, credit cards, or personal data. It's like digital fishing - they cast bait hoping you'll bite. You can identify phishing by red flags like: urgent threats ('Your account will be closed!'), generic greetings ('Dear Customer'), suspicious links, poor grammar, requests for personal info via email, and too-good-to-be-true offers. The golden rule: When in doubt, don't click! Go directly to the website or call the company using official contact info.",
+      "points": 10
+    },
+    {
+      "id": 14,
+      "question": "What's the difference between spam and spim?",
+      "hint": "Consider the delivery method and medium.",
+      "sampleAnswer": "Spam is unsolicited junk email sent in bulk - like digital junk mail in your inbox. Spim is the same thing but delivered through instant messaging platforms (WhatsApp, Facebook Messenger, SMS) instead of email. The name comes from SPam + IM (Instant Messaging). Spim is growing because people trust messages more than email, messaging apps have weaker spam filters, and messages feel more personal. Both are annoying and potentially dangerous, but spim is trickier because it bypasses traditional email filters and feels more intrusive.",
+      "points": 10
+    },
+    {
+      "id": 15,
+      "question": "What is a replay attack and how can it be prevented?",
+      "hint": "Think about intercepting and reusing valid messages.",
+      "sampleAnswer": "A replay attack is when an attacker intercepts a valid data transmission and then maliciously repeats it later. Imagine recording someone saying 'Transfer $100 to Bob' and playing it again to make multiple transfers. The attacker doesn't need to understand or decrypt the message - they just copy and replay it. Prevention methods include: timestamps (reject old messages), nonces (one-time numbers), sequence numbers (reject old sequences), and session keys (old messages won't work in new sessions). Modern systems like HTTPS use these techniques to ensure each message is unique and time-sensitive.",
+      "points": 10
+    }
+  ]
+}

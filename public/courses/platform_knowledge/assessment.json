@@ -1,0 +1,79 @@
+{
+  "courseId": "platform_knowledge",
+  "courseTitle": "Platform Knowledge",
+  "assessmentTitle": "Platform & Technology Interview",
+  "description": "Test your understanding of platform technologies and concepts through this interview-style assessment.",
+  "passingScore": 70,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is an API Gateway and what problems does it solve?",
+      "hint": "Think about microservices and centralized entry point.",
+      "sampleAnswer": "An API Gateway is a single entry point for client requests to backend microservices. It handles request routing, composition, protocol translation, authentication, rate limiting, caching, and monitoring. Solves problems like: client-side complexity (clients don't need to know all service endpoints), cross-cutting concerns (centralized security, logging), protocol translation (REST to gRPC), and performance optimization (caching, request aggregation). Examples include Kong, AWS API Gateway, Azure API Management. Essential in microservices architecture for managing API complexity.",
+      "points": 10
+    },
+    {
+      "id": 2,
+      "question": "Can you explain what a CDN (Content Delivery Network) is and how it works?",
+      "hint": "Think about distributed servers and content caching.",
+      "sampleAnswer": "A CDN is a geographically distributed network of servers that cache and deliver content closer to users, reducing latency and improving performance. When a user requests content, the CDN routes them to the nearest edge server. If content is cached, it's served immediately; otherwise, it's fetched from the origin, cached, and served. Benefits include: faster load times, reduced bandwidth costs, improved availability, DDoS protection, and global reach. Used for static assets (images, videos, JS/CSS) and dynamic content. Examples: Cloudflare, Akamai, AWS CloudFront.",
+      "points": 10
+    },
+    {
+      "id": 3,
+      "question": "What is Single Sign-On (SSO) and how does it work?",
+      "hint": "Consider authentication across multiple applications.",
+      "sampleAnswer": "SSO allows users to authenticate once and access multiple applications without re-entering credentials. When a user logs in, an identity provider (IdP) creates a session and token. When accessing other applications, the token is validated without additional login. Protocols include SAML, OAuth 2.0, and OpenID Connect. Benefits: improved user experience, reduced password fatigue, centralized access control, and better security. Common in enterprises for managing access to multiple internal and SaaS applications. Examples: Okta, Azure AD, Google Workspace SSO.",
+      "points": 10
+    },
+    {
+      "id": 4,
+      "question": "Explain what webhooks are and when you would use them.",
+      "hint": "Think about event-driven communication.",
+      "sampleAnswer": "Webhooks are user-defined HTTP callbacks triggered by specific events. When an event occurs, the source application makes an HTTP POST request to a URL you configure. Unlike polling (checking repeatedly for updates), webhooks push data immediately when events happen. Use cases: real-time notifications (payment processed, order shipped), integrating third-party services, triggering automation workflows. Benefits: real-time updates, reduced server load, simpler implementation than polling. Security considerations include validating signatures and using HTTPS. Common in GitHub, Stripe, Slack integrations.",
+      "points": 10
+    },
+    {
+      "id": 5,
+      "question": "What are WebSockets and how do they differ from HTTP?",
+      "hint": "Consider persistent connections and real-time communication.",
+      "sampleAnswer": "WebSocket is a protocol providing full-duplex, bidirectional communication over a single TCP connection. Unlike HTTP (request-response, stateless), WebSocket maintains a persistent connection allowing real-time data exchange. After an HTTP handshake upgrade, the connection stays open for continuous data flow. Use for: real-time chat, live notifications, collaborative editing, gaming, live dashboards. Benefits: lower latency, reduced overhead (no repeated HTTP headers), server push capability. HTTP is better for traditional request-response patterns; WebSocket for real-time, event-driven applications.",
+      "points": 10
+    },
+    {
+      "id": 6,
+      "question": "What is gRPC and what advantages does it offer?",
+      "hint": "Think about protocol buffers and performance.",
+      "sampleAnswer": "gRPC is a high-performance RPC (Remote Procedure Call) framework using HTTP/2 and Protocol Buffers (binary serialization). Advantages: faster than REST (binary vs text), strongly typed contracts, built-in code generation, bidirectional streaming, better performance for internal microservices communication. Supports multiple languages. Disadvantages: less human-readable, limited browser support, steeper learning curve. Ideal for: microservices communication, real-time streaming, high-performance APIs. REST is better for public APIs and browser clients. Examples: Google, Netflix use gRPC internally.",
+      "points": 10
+    },
+    {
+      "id": 7,
+      "question": "What is caching and what are the different caching strategies?",
+      "hint": "Consider where and when to cache data.",
+      "sampleAnswer": "Caching stores frequently accessed data in fast-access storage to reduce latency and load. Strategies include: Cache-Aside (application manages cache), Write-Through (write to cache and DB simultaneously), Write-Behind (async DB write), Refresh-Ahead (proactive refresh). Cache levels: client-side (browser), CDN, application (Redis, Memcached), database (query cache). Eviction policies: LRU, LFU, FIFO. Considerations: cache invalidation (hardest problem), consistency, and stale data. Use for: database query results, API responses, static assets, session data.",
+      "points": 10
+    },
+    {
+      "id": 8,
+      "question": "What is a Service Mesh and what problems does it solve?",
+      "hint": "Think about microservices communication and infrastructure.",
+      "sampleAnswer": "A Service Mesh is an infrastructure layer handling service-to-service communication in microservices, providing features like traffic management, security, observability without changing application code. Uses sidecar proxies (e.g., Envoy) alongside each service. Solves: complex networking (load balancing, retry logic, circuit breaking), security (mTLS, encryption), observability (distributed tracing, metrics), and traffic control (canary deployments, A/B testing). Examples: Istio, Linkerd, Consul Connect. Essential for large-scale microservices but adds complexity and overhead.",
+      "points": 10
+    },
+    {
+      "id": 9,
+      "question": "Can you explain the different deployment strategies: Blue-Green, Canary, and Rolling?",
+      "hint": "Consider risk mitigation and downtime.",
+      "sampleAnswer": "Blue-Green: Two identical environments (blue=current, green=new). Deploy to green, test, switch traffic. Easy rollback but doubles infrastructure. Canary: Gradually route small percentage of traffic to new version, monitor, increase if stable. Lower risk, detects issues early. Rolling: Update instances incrementally (e.g., 25% at a time). No downtime, less infrastructure but slower rollback. Big Bang: Replace all at once, high risk but simple. Choose based on risk tolerance, infrastructure costs, and rollback requirements. Modern platforms like Kubernetes support all strategies.",
+      "points": 10
+    },
+    {
+      "id": 10,
+      "question": "What is OpenTelemetry and why is it important?",
+      "hint": "Think about observability and standardization.",
+      "sampleAnswer": "OpenTelemetry is an open-source observability framework providing a standardized way to collect traces, metrics, and logs from applications. It offers vendor-neutral APIs, SDKs, and instrumentation for multiple languages. Importance: eliminates vendor lock-in, provides consistent telemetry across services, simplifies observability setup, supports auto-instrumentation. Replaces older projects (OpenTracing, OpenCensus). Works with backends like Prometheus, Jaeger, Datadog. Essential for distributed systems observability, enabling debugging, performance monitoring, and understanding system behavior in production.",
+      "points": 10
+    }
+  ]
+}
